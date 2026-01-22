@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assistant Virtuel - FAMPIONONANTSOA Rodin</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --gray: #64748b;
+      --hover-scale: 1.05;
+    }* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { background: var(--light); color: var(--dark); line-height: 1.6; overflow-x: hidden; }
+
+header { background: linear-gradient(135deg, var(--primary), #1e40af); color: white; padding: 80px 20px; text-align: center; position: relative; overflow: hidden; }
+header h1 { font-size: 2.8rem; margin-bottom: 15px; animation: fadeInDown 1s ease forwards; }
+header p { font-size: 1.2rem; max-width: 700px; margin: auto; animation: fadeInUp 1s ease 0.5s forwards; opacity: 0; }
+
+nav { background: white; padding: 15px 20px; display: flex; justify-content: center; gap: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+nav a { text-decoration: none; color: var(--dark); font-weight: 600; transition: color 0.3s, transform 0.3s; }
+nav a:hover { color: var(--primary); transform: scale(1.1); }
+
+section { padding: 70px 20px; max-width: 1100px; margin: auto; }
+section h2 { text-align: center; margin-bottom: 40px; font-size: 2.2rem; position: relative; }
+
+.services, .portfolio { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+.card, .portfolio-item { background: white; padding: 30px; border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); transition: transform 0.4s, box-shadow 0.4s; text-align: center; cursor: pointer; }
+.card:hover, .portfolio-item:hover { transform: scale(var(--hover-scale)); box-shadow: 0 15px 40px rgba(0,0,0,0.2); }
+.card h3, .portfolio-item h3 { margin-bottom: 10px; color: var(--primary); }
+.portfolio-item img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; transition: transform 0.4s; }
+.portfolio-item:hover img { transform: scale(1.05); }
+
+.about { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.about div { background: white; padding: 30px; border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); transition: transform 0.4s; }
+.about div:hover { transform: scale(var(--hover-scale)); }
+
+.cta { background: var(--primary); color: white; text-align: center; padding: 60px 20px; }
+.cta h2 { margin-bottom: 20px; }
+.cta a { background: white; color: var(--primary); padding: 15px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; margin: 5px; display: inline-block; transition: transform 0.3s; }
+.cta a:hover { transform: scale(1.1); }
+
+form { max-width: 600px; margin: auto; display: grid; gap: 15px; }
+input, textarea { padding: 15px; border-radius: 10px; border: 1px solid #e2e8f0; font-size: 1rem; transition: border-color 0.3s; }
+input:focus, textarea:focus { border-color: var(--primary); outline: none; }
+button { padding: 15px; background: var(--primary); color: white; border: none; border-radius: 30px; font-size: 1rem; cursor: pointer; transition: transform 0.3s; }
+button:hover { transform: scale(1.05); }
+
+footer { background: var(--dark); color: #cbd5f5; text-align: center; padding: 25px; }
+
+@keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px);} to { opacity: 1; transform: translateY(0);} }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px);} to { opacity: 1; transform: translateY(0);} }
+
+@media (max-width: 768px) { .about { grid-template-columns: 1fr; } }
+
+  </style>
+</head>
+<body>  <header>
+    <h1>FAMPIONONANTSOA Rodin - Assistant Virtuel</h1>
+    <p>Depuis Madagascar, je propose des services de gestion administrative, support client, community management et assistance digitale pour entrepreneurs et entreprises.</p>
+  </header>  <nav>
+    <a href="#services">Services</a>
+    <a href="#apropos">À propos</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>  <section id="services">
+    <h2>Mes Services</h2>
+    <div class="services">
+      <div class="card"><h3>Assistance Administrative</h3><p>Gestion d'e-mails, saisie de données, facturation, organisation de documents.</p></div>
+      <div class="card"><h3>Support Client</h3><p>Réponses aux clients, suivi des demandes, gestion des tickets et CRM.</p></div>
+      <div class="card"><h3>Community Management</h3><p>Gestion de pages Facebook, réponses aux messages, modération et contenu.</p></div>
+      <div class="card"><h3>Recherche & Web</h3><p>Recherche en ligne, collecte de données, veille concurrentielle.</p></div>
+    </div>
+  </section>  <section id="apropos">
+    <h2>À propos de moi</h2>
+    <div class="about">
+      <div><h3>Profil</h3><p>Je suis FAMPIONONANTSOA Rodin, assistant virtuel basé à Madagascar, sérieux, organisé et orienté résultats. J'aide les entrepreneurs à gagner du temps et à se concentrer sur l'essentiel.</p></div>
+      <div><h3>Pourquoi me choisir ?</h3><ul><li>✔ Fiable et professionnel</li><li>✔ Communication claire</li><li>✔ Adaptabilité et discrétion</li><li>✔ Disponible à distance</li></ul></div>
+    </div>
+  </section>  <section id="portfolio">
+    <h2>Mon Portfolio</h2>
+    <div class="portfolio">
+      <div class="portfolio-item"><img src="https://via.placeholder.com/400x180.png" alt="Projet 1"><h3>Projet 1</h3><p>Gestion complète des e-mails et organisation de documents pour une startup locale.</p></div>
+      <div class="portfolio-item"><img src="https://via.placeholder.com/400x180.png" alt="Projet 2"><h3>Projet 2</h3><p>Community management et modération de pages Facebook pour un e-commerce à Madagascar.</p></div>
+      <div class="portfolio-item"><img src="https://via.placeholder.com/400x180.png" alt="Projet 3"><h3>Projet 3</h3><p>Support client et CRM pour une PME, augmentation de la satisfaction client de 35%.</p></div>
+    </div>
+  </section>  <section id="contact">
+    <h2>Me Contacter</h2>
+	<div class="cta">
+	<p>Disponible immédiatement – 100% télétravail – International</p>
+	<a href="mailto:rodin.fampiononantsoa@gmail.com">Me contacter par email</a><br><br>
+      <a href="https://wa.me/+261349300579" target="_blank">WhatsApp Direct</a>
+      <a href="#contactForm">Formulaire de Contact</a>
+    </div>
+    <form id="contactForm" onsubmit="event.preventDefault(); alert('Message envoyé avec succès !');">
+      <input type="text" placeholder="Votre nom" required />
+      <input type="email" placeholder="Votre email" required />
+      <textarea rows="5" placeholder="Votre message"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>  <footer>
+    <p>© 2026 FAMPIONONANTSOA Rodin | Tous droits réservés | Madagascar</p>
+  </footer></body>
+</html>
